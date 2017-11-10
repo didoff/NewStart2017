@@ -15,8 +15,8 @@ namespace ConvertSpeedUnits
             int minutes = int.Parse(Console.ReadLine());
             int seconds = int.Parse(Console.ReadLine());
 
-            
-            Console.WriteLine("{0:F4}", exactSeconds);
+            // PLEASE CONTINUE
+
         }
     }
 }
