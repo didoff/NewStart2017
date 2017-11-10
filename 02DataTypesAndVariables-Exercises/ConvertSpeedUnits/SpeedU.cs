@@ -15,8 +15,24 @@ namespace ConvertSpeedUnits
             int minutes = int.Parse(Console.ReadLine());
             int seconds = int.Parse(Console.ReadLine());
 
-            // PLEASE CONTINUE
+            /*
+             * hour 1 = 60 min = 3600 sec
+             */
 
+            double hoursToSecond = (double)hours * 60 * 60;
+            double minToSecond = (double)minutes * 60;
+
+            double total = seconds + minToSecond + hoursToSecond;
+            double metersPerSecond = (double)distance / total;
+            double kph = (double)metersPerSecond * 3.6;
+
+            double distanceInMile = (double)distance * 1309;
+
+            double milesPerHour = kph * 0.6213;
+
+            Console.WriteLine("{0:F6}", metersPerSecond);
+            Console.WriteLine("{0:F6}", kph);
+            Console.WriteLine("{0:F6}", milesPerHour);
         }
     }
 }
