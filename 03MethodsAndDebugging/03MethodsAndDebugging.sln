@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankReceipt", "BlankReceipt\BlankReceipt.csproj", "{FE0A1FEA-8015-48EB-BDFA-3948C11F1FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignOfInteger", "SignOfInteger\SignOfInteger.csproj", "{6678C320-8FA3-4662-AE89-EB8DF416A4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingTriangle", "PrintingTriangle\PrintingTriangle.csproj", "{366B2D67-28E3-426C-A4F9-B60C42F9FB8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0A1FEA-8015-48EB-BDFA-3948C11F1FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0A1FEA-8015-48EB-BDFA-3948C11F1FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0A1FEA-8015-48EB-BDFA-3948C11F1FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0A1FEA-8015-48EB-BDFA-3948C11F1FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6678C320-8FA3-4662-AE89-EB8DF416A4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6678C320-8FA3-4662-AE89-EB8DF416A4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6678C320-8FA3-4662-AE89-EB8DF416A4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6678C320-8FA3-4662-AE89-EB8DF416A4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366B2D67-28E3-426C-A4F9-B60C42F9FB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366B2D67-28E3-426C-A4F9-B60C42F9FB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366B2D67-28E3-426C-A4F9-B60C42F9FB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366B2D67-28E3-426C-A4F9-B60C42F9FB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
