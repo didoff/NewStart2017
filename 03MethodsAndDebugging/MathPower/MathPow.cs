@@ -13,12 +13,12 @@ namespace MathPower
             double num = double.Parse(Console.ReadLine());
             int pow = int.Parse(Console.ReadLine());
 
-            double result = MathPow(num, pow);
+            double result = MathPower(num, pow);
 
             Console.WriteLine(result);
         }
 
-        static double MathPow(double n, int power)
+        static double MathPower(double n, int power)
         {
             return Math.Pow(n, power);
         }

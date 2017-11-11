@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MultiplyEvenByOdd
 {
-    class Program
+    class EvensByOdsM
     {
         static void Main(string[] args)
         {

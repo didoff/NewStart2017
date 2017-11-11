@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A8B32C1B-5463-4587-95BF-61DDD0F29236}</ProjectGuid>
+    <ProjectGuid>{0CF7AABD-64D7-479F-8576-5A62CA0275BD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MultiplyEvenByOdd</RootNamespace>
-    <AssemblyName>MultiplyEvenByOdd</AssemblyName>
+    <RootNamespace>RefactorPriceChangeAlert</RootNamespace>
+    <AssemblyName>RefactorPriceChangeAlert</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EvensByOdsM.cs" />
+    <Compile Include="PriceChangeAlert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
