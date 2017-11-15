@@ -11,8 +11,16 @@ namespace MasterNumbers
         static void Main(string[] args)
         {
             int input = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(ContainsEvenDigit(input));
+            
+            for (int i = 0; i < input; i++)
+            {
+                if (SumOfDigits(i) == true && ContainsEvenDigit(i) == true && IsPalindrome(i) == true)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            
+            
         }
 
         private static bool IsPalindrome(int num)
@@ -30,13 +38,14 @@ namespace MasterNumbers
         private static bool SumOfDigits(int num)
         {
             int sum = 0;
+            int numU = num;
 
             for (int i = 0; i < num; i++)
             {
-                int digit = num % 10;
-                digit += sum;
+                int digit = numU % 10;
+                sum += digit;
 
-                num /= 10;
+                numU /= 10;
             }
 
             if (sum % 7 == 0)
@@ -53,15 +62,14 @@ namespace MasterNumbers
             {
                 int digit = num % 10;
 
-                if (digit % 2 == 0)
+                if (digit % 2 == 0 && digit > 0)
                 {
                     containsEven = true;
-                    break;
                 }
 
                 num /= 10;
 
-                if (num < 0)
+                if (num <= 0)
                     break;
             }
 
