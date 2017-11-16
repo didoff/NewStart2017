@@ -11,24 +11,22 @@ namespace MasterNumbers
         static void Main(string[] args)
         {
             int input = int.Parse(Console.ReadLine());
-            
-            for (int i = 0; i < input; i++)
+
+            for (int i = 1; i <= input; i++)
             {
                 if (SumOfDigits(i) == true && ContainsEvenDigit(i) == true && IsPalindrome(i) == true)
                 {
                     Console.WriteLine(i);
                 }
             }
-            
-            
         }
 
         private static bool IsPalindrome(int num)
         {
-            string numToChar = Convert.ToString(num);
+            string numToSring = Convert.ToString(num);
 
-            string first = numToChar.Substring(0, numToChar.Length / 2);
-            char[] arr = numToChar.ToArray();
+            string first = numToSring.Substring(0, numToSring.Length / 2);
+            char[] arr = numToSring.ToArray();
             Array.Reverse(arr);
             string temp = new string(arr);
             string second = temp.Substring(0, temp.Length / 2);
@@ -37,15 +35,12 @@ namespace MasterNumbers
 
         private static bool SumOfDigits(int num)
         {
+            string str = num.ToString();
             int sum = 0;
-            int numU = num;
 
-            for (int i = 0; i < num; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                int digit = numU % 10;
-                sum += digit;
-
-                numU /= 10;
+                sum += int.Parse(str[i].ToString());
             }
 
             if (sum % 7 == 0)
@@ -54,26 +49,48 @@ namespace MasterNumbers
                 return false;
         }
 
-        private static bool ContainsEvenDigit(int num)
+        //private static bool ContainsEvenDigit(int num)
+        //{
+        //    bool containsEven = false;
+
+        //    while (containsEven == false)
+        //    {
+        //        int digit = num % 10;
+
+        //        if (digit % 2 == 0 && digit > 0)
+        //        {
+        //            containsEven = true;
+        //        }
+
+        //        num /= 10;
+
+        //        if (num <= 0)
+        //            break;
+        //    }
+
+        //    return containsEven;
+        //}
+
+        public static bool ContainsEvenDigit(int number)
         {
-            bool containsEven = false;
-
-            while (containsEven == false)
+            string str = number.ToString();
+            int evenCounter = 0;
+            for (int i = 0; i < str.Length; i++)
             {
-                int digit = num % 10;
-
-                if (digit % 2 == 0 && digit > 0)
+                int currentDigit = int.Parse(str[i].ToString());
+                if (currentDigit % 2 == 0)
                 {
-                    containsEven = true;
+                    evenCounter++;
                 }
-
-                num /= 10;
-
-                if (num <= 0)
-                    break;
             }
-
-            return containsEven;
+            if (evenCounter > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
