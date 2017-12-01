@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseArray", "ReverseArra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastKNumbersSequence", "LastKNumbersSequence\LastKNumbersSequence.csproj", "{113FDE60-061A-4151-927C-2B24A46D0B19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleSum", "TripleSum\TripleSum.csproj", "{FE7A553B-C800-4456-A8F9-4D0A754FB213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundingNumbersAwayFromZero", "RoundingNumbersAwayFromZero\RoundingNumbersAwayFromZero.csproj", "{1AD8B94A-DCF8-4570-921A-F9A3903455FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{113FDE60-061A-4151-927C-2B24A46D0B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{113FDE60-061A-4151-927C-2B24A46D0B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{113FDE60-061A-4151-927C-2B24A46D0B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7A553B-C800-4456-A8F9-4D0A754FB213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7A553B-C800-4456-A8F9-4D0A754FB213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7A553B-C800-4456-A8F9-4D0A754FB213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7A553B-C800-4456-A8F9-4D0A754FB213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD8B94A-DCF8-4570-921A-F9A3903455FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD8B94A-DCF8-4570-921A-F9A3903455FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD8B94A-DCF8-4570-921A-F9A3903455FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD8B94A-DCF8-4570-921A-F9A3903455FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

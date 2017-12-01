@@ -18,10 +18,24 @@ namespace ReverseArray
                 numArr[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int i = numArr.Length-1; i >= 0; i--)
+            //for (int i = numArr.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(numArr[i] + " ");
+            //}
+
+            int[] reversed = new int[numArr.Length];
+
+            for (int i = 0; i < numArr.Length; i++)
             {
-                Console.WriteLine(numArr[i] + " ");
+                reversed[i] = numArr[numArr.Length - 1 - i];
             }
+
+            foreach (var number in reversed)
+            {
+                Console.Write(number + " ");
+            }
+            Console.WriteLine();
+
         }
     }
 }

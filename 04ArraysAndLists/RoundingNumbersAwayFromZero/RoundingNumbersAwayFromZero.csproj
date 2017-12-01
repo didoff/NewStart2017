@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE7A553B-C800-4456-A8F9-4D0A754FB213}</ProjectGuid>
+    <ProjectGuid>{1AD8B94A-DCF8-4570-921A-F9A3903455FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TripleSum</RootNamespace>
-    <AssemblyName>TripleSum</AssemblyName>
+    <RootNamespace>RoundingNumbersAwayFromZero</RootNamespace>
+    <AssemblyName>RoundingNumbersAwayFromZero</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TripleSum.cs" />
+    <Compile Include="RoundingAwayf0.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
