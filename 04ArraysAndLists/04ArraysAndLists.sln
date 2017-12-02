@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumAdjacentEqualNumbers", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareNumbers", "SquareNumbers\SquareNumbers.csproj", "{B1167BA0-1E34-4386-BDF7-4076B92B246E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountNumbers", "CountNumbers\CountNumbers.csproj", "{F200E26E-5C38-4BA0-92B9-1ADCB2B7C777}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{B1167BA0-1E34-4386-BDF7-4076B92B246E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1167BA0-1E34-4386-BDF7-4076B92B246E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1167BA0-1E34-4386-BDF7-4076B92B246E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F200E26E-5C38-4BA0-92B9-1ADCB2B7C777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F200E26E-5C38-4BA0-92B9-1ADCB2B7C777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F200E26E-5C38-4BA0-92B9-1ADCB2B7C777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F200E26E-5C38-4BA0-92B9-1ADCB2B7C777}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
