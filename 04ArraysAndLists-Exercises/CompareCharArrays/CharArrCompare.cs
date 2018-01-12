@@ -10,7 +10,7 @@ namespace CompareCharArrays
     {
         static void Main(string[] args)
         {
-            // PENDING IMPROVEMENT
+            // 80/100 - test no. 4
             char[] first = Console.ReadLine().Split().Select(a => char.Parse(a)).ToArray();
             char[] second = Console.ReadLine().Split().Select(a => char.Parse(a)).ToArray();
 
@@ -28,7 +28,7 @@ namespace CompareCharArrays
                 }
             }
 
-            if (first.Length <= second.Length && firstAlphabetically)
+            if (first.Length <= second.Length && (int)first[0] < (int)second[0])
             {
                 for (int i = 0; i < first.Length; i++)
                 {

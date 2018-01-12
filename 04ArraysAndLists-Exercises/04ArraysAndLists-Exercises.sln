@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxEqualElementSequence", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOfLetters", "IndexOfLetters\IndexOfLetters.csproj", "{9EAB7B40-90E6-42FA-BE90-A7E24B52DFDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairsByDifference", "PairsByDifference\PairsByDifference.csproj", "{81C64756-3C27-4BC6-93EB-219DC9F057DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumReversedNumbers", "SumReversedNumbers\SumReversedNumbers.csproj", "{3AE83026-00DA-4581-8880-C5A39D5F161D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{9EAB7B40-90E6-42FA-BE90-A7E24B52DFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EAB7B40-90E6-42FA-BE90-A7E24B52DFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EAB7B40-90E6-42FA-BE90-A7E24B52DFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C64756-3C27-4BC6-93EB-219DC9F057DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C64756-3C27-4BC6-93EB-219DC9F057DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C64756-3C27-4BC6-93EB-219DC9F057DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C64756-3C27-4BC6-93EB-219DC9F057DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE83026-00DA-4581-8880-C5A39D5F161D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE83026-00DA-4581-8880-C5A39D5F161D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE83026-00DA-4581-8880-C5A39D5F161D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE83026-00DA-4581-8880-C5A39D5F161D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

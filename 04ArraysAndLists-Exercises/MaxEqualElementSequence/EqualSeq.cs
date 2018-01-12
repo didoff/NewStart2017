@@ -10,14 +10,39 @@ namespace MaxEqualElementSequence
     {
         static void Main(string[] args)
         {
-            List<int> input = Console.ReadLine()
-                .Split(' ')
-                .Select(a => int.Parse(a))
-                .ToList();
 
-            int[] numbers = new int[input.Max() + 1];
+            // OH COME ON!!
 
-            // OMG HAVE TO WORK THIS OUT!!!
+            int[] sequence = Console.ReadLine().Split().Select(a => int.Parse(a)).ToArray();
+
+            int start = 0;
+            int lenght = 1;
+            int bestStart = 0;
+            int bestLength = 0;
+
+            for (int i = 1; i < sequence.Length; i++)
+            {
+                if(sequence[i - 1] == sequence[i])
+                {
+                    lenght++;
+                    if (lenght > bestLength)
+                    {
+                        start = lenght - 1;
+                        bestLength = lenght;
+                    }
+                }
+                else
+                {
+                    lenght = 0;
+                }
+
+            }
+
+            for (int i = start; i < bestLength + 1; i++)
+            {
+                Console.WriteLine(sequence[i]);
+            }
+            
         }
     }
 }
