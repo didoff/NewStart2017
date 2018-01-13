@@ -47,13 +47,13 @@ namespace ArrayManipulator
 
             }
 
-            Console.WriteLine(string.Join(" ", inputList));
+            Console.WriteLine("[" + string.Join(", ", inputList) + "]");
         }
 
         private static List<int> ShiftByPosition(int rotationTimes, List<int> numbers)
         {
             // Taken from Rotate and Sum assignment.
-
+            
             for (int i = 0; i < rotationTimes; i++)
             {
                 int lastNum = numbers[numbers.Count - 1];
