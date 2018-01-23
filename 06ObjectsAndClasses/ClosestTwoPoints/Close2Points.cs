@@ -18,26 +18,31 @@ namespace ClosestTwoPoints
                 allPoints[i] = ReadPoint();
             }
 
-            double result = FindClosestPoints(allPoints);
-            Console.WriteLine(result);
-
-
+            Point[] result = FindClosestPoints(allPoints);
+            double dist = CalculatePointDistance(result[0], result[1]);
+            Console.WriteLine($"{dist:F3}");
+            Console.WriteLine($"({result[0].X}, {result[0].Y})");
+            Console.WriteLine($"({result[1].X}, {result[1].Y})");
         }
 
-        private static double FindClosestPoints(Point[] points)
+        private static Point[] FindClosestPoints(Point[] points)
         {
-            double[] distances = new double[points.Length - 1];
             double minDistance = double.MaxValue;
-            int position = 0;
-            for (int i = 1; i < points.Length; i++)
+            Point[] closestPoints = null;
+            for (int i = 0; i < points.Length; i++)
             {
-                for (int j = 0; j < points.Length; j++)
+                for (int j = i + 1; j < points.Length; j++)
                 {
-                    distances[i] = CalculatePointDistance(points[i - 1], points[j]); // compare each
+                    double distance = CalculatePointDistance(points[i], points[j]);
+                    if (distance < minDistance)
+                    {
+                        minDistance = distance;
+                        closestPoints = new Point[] { points[i], points[j] };
+                    }
                 }
             }
 
-            // To return Point[] array with the closest points and their distance!
+            return closestPoints; // To return Point[] array with the closest points and their distance!
         }
 
         private static Point ReadPoint()
@@ -56,8 +61,7 @@ namespace ClosestTwoPoints
             int deltaA = p1.X - p2.X;
             int deltaB = p1.Y - p2.Y;
 
-            double euclDist = Math.Sqrt(deltaA * deltaA + deltaB * deltaB);
-            return euclDist;
+            return Math.Sqrt(deltaA * deltaA + deltaB * deltaB);
         }
     }
 
